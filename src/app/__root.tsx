@@ -1,4 +1,4 @@
-import { router } from '@/core/providers/provider.router'
+import { router } from '@/core/providers/router.provider'
 import '@/core/styles/global.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { StrictMode } from 'react'

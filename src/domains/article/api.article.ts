@@ -10,4 +10,4 @@ class ArticleApi {
   }
 }
 
-export const aricleApi = new ArticleApi()
+export const articleApi = new ArticleApi()
