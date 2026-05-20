@@ -1,0 +1,9 @@
+public/*
+woff2
+woff
+package-lock.json
+yarn.lock
+node_modules
+dist
+.husky/*
+.prettierignore
