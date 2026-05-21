@@ -1,11 +1,12 @@
 import axios from 'axios'
 
-import type { ArticleResponse } from './types.article'
+import type { IArticle } from './types.article'
 
 class ArticleApi {
-  async getAll(): Promise<ArticleResponse> {
-    // @ts-ignore - This is a mock API, so we ignore TypeScript errors for demonstration purposes
-    const { data } = axios.get('/articles')
+  async getAll(): Promise<IArticle[]> {
+    const { data } = await axios.get<IArticle[]>(
+      'https://jsonplaceholder.typicode.com/posts',
+    )
     return data
   }
 }

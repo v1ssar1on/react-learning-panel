@@ -1,8 +1,6 @@
-export interface ArticleResponse {
-  id: string
+export interface IArticle {
+  id: number
+  userId: number
   title: string
-  description: string
-
-  updatedAt: string
-  createdAt: string
+  body: string
 }
